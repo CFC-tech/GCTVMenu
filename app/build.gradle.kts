@@ -57,6 +57,7 @@ dependencies {
     // UI
     implementation("com.google.android.material:material:1.10.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+    implementation("com.github.bumptech.glide:glide:4.16.0")
 
     // Media
     //implementation("androidx.media3:media3-exoplayer:1.2.0")

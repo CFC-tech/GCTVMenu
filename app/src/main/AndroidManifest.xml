@@ -17,10 +17,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GCTV">
         <activity
-            android:name=".PlayerActivity"
+            android:name=".ImageActivity"
             android:exported="false"
-            android:screenOrientation="landscape"
-            android:configChanges="orientation|screenSize"/>
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".PlayerActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="landscape" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

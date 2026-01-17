@@ -26,7 +26,7 @@ class PlayerActivity : AppCompatActivity() {
 
         playerView = findViewById(R.id.playerView)
 
-        // ✅ Get VIDEO_LIST
+        // Get VIDEO_LIST
         val videoList = intent.getStringArrayListExtra("VIDEO_LIST")
             ?.filter { File(it).exists() }
             ?: run {
@@ -37,7 +37,7 @@ class PlayerActivity : AppCompatActivity() {
         player = ExoPlayer.Builder(this).build()
         playerView.player = player
 
-        // ✅ Playlist behavior
+        // Playlist behavior
         player.repeatMode = Player.REPEAT_MODE_ALL
         player.shuffleModeEnabled = false   // true if want shuffle
 
