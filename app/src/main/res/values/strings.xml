@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">GCTV</string>
+    <string name="download">Download</string>
+    <string name="play">Play</string>
+    <string name="refresh_files">Refresh Files</string>
+    <string name="download_first">DOWNLOAD FIRST</string>
+    <string name="downloading">DOWNLOADING...</string>
+    <string name="play_video">PLAY VIDEO</string>
+
+</resources>
