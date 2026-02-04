@@ -335,7 +335,7 @@ class MainActivity : AppCompatActivity() {
         binding.btnImage.text = text
     }
 
-    // Open Video / Image (intent for Activities)
+
     private fun openVideoFiles() {
         val dir = getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS) ?: return
         val videoFiles = dir.listFiles()?.filter { it.isVideo() }?.map { it.absolutePath } ?: return
@@ -359,7 +359,7 @@ class MainActivity : AppCompatActivity() {
         stopProgressPolling()
     }
 
-    // --- Helpers ---
+    // Helpers
     private fun File.isVideo() = extension.equals("mp4", true)
     private fun File.isImage() = extension.equals("jpg", true) ||
             extension.equals("jpeg", true) || extension.equals("png", true)
